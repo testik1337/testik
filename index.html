@@ -8,26 +8,35 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-            color: #333;
+            background: url('https://images.unsplash.com/photo-1641936486639-1db71832e2db?q=80&w=2070&auto=format&fit=crop') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
             text-align: center;
+            position: relative;
         }
-        .container {
+        .overlay {
+            background: rgba(0, 0, 0, 0.6); /* Полупрозрачный чёрный фон для читаемости текста */
+            min-height: 100vh;
             padding: 50px 20px;
         }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
         h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             color: #1e90ff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         p {
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin: 20px 0;
+            line-height: 1.6;
         }
         .highlight {
             font-weight: bold;
             color: #ff4500;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
         .buttons {
             margin: 30px 0;
@@ -60,27 +69,83 @@
             box-shadow: 0 0 20px rgba(30, 144, 255, 0.8);
         }
         .meme-graph {
-            margin-top: 30px;
+            margin: 30px 0;
             font-size: 2em;
             color: #32cd32;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
+        .tim-cook-img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #1e90ff;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 0 15px rgba(30, 144, 255, 0.5);
+        }
+        .history, .goals {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+            backdrop-filter: blur(5px);
+        }
+        .goals ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
+        }
+        .goals li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #ffd700;
+        }
+        .goals li:last-child {
+            font-weight: bold;
+            color: #ff4500;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>TimCookCoin (TCC) 🚀</h1>
-        <p>This meme token will <span class="highlight">explode the markets</span> way better than Apple ever could! 🍎💥</p>
-        
-        <div class="buttons">
-            <button class="buy-btn" onclick="alert('Coming soon! Stay tuned for TCC purchase details!')">BUY TCC</button>
-            <a href="https://x.com/tim_cook" target="_blank">
-                <button class="social-btn">Follow Tim Cook on X</button>
-            </a>
-        </div>
+    <div class="overlay">
+        <div class="container">
+            <h1>TimCookCoin (TCC) 🚀</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Tim_Cook_2009_cropped.jpg/220px-Tim_Cook_2009_cropped.jpg" alt="Tim Cook" class="tim-cook-img">
+            <p>This meme token will <span class="highlight">explode the markets</span> way better than Apple ever could! 🍎💥</p>
+            
+            <div class="history">
+                <h2>History of TCC</h2>
+                <p>Tim Cook got tired of working for a big corporation like Apple, where every move was under scrutiny. He decided to try his luck with his own project — something he could fully control. And so, TimCookCoin (TCC) was born: a meme token for the everyday worker, the regular folks who dream big! 🤑</p>
+            </div>
 
-        <div class="meme-graph">
-            📈 To the Moon with TCC!
+            <div class="goals">
+                <h2>Our Goals 📊</h2>
+                <p>We’re just getting started! 🔥</p>
+                <ul>
+                    <li>Goal 1: $50,000 Market Cap</li>
+                    <li>Goal 2: $100,000 Market Cap</li>
+                    <li>Goal 3: $250,000 Market Cap</li>
+                    <li>Goal 4: $500,000 Market Cap</li>
+                    <li>Goal 5: $1M Market Cap</li>
+                    <li>Goal 6: $10M Market Cap</li>
+                    <li>Goal 7: $50M Market Cap</li>
+                    <li>Goal 8: $100M Market Cap</li>
+                    <li>Goal 9: $500M Market Cap</li>
+                    <li>Goal 10: $1B Market Cap 🔥</li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <button class="buy-btn" onclick="alert('Coming soon! Stay tuned for TCC purchase details!')">BUY TCC</button>
+                <a href="https://x.com/tim_cook" target="_blank">
+                    <button class="social-btn">Follow Tim Cook on X</button>
+                </a>
+            </div>
+
+            <div class="meme-graph">
+                📈 To the Moon with TCC!
+            </div>
         </div>
     </div>
 </body>
